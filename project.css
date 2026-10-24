@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 :root {
     --text: #dedff7;
     --background: #050715;
@@ -7,60 +10,43 @@
 
 }
 body {
-    background-color: var(--background);
+    background-color: #000000;
     color: var(--text);
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-main {
-    margin: 0 auto;
-    max-width: 900px;
-    padding: 2rem;
-}
-
-h1 {
-    color: var(--primary);
-}
-
-p {
-    line-height: 1.6;
-    margin: 0 0 1em 0;
-}
-
-.palette {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-}
-
-.color-swatch {
-    border-radius: 8px;
-    min-height: 120px;
-    padding: 1rem;
-}
-
-.color-swatch h3,
-.color-swatch p {
-    margin: 0 0 0.5rem;
-}
-
-.primary {
+header {
     background-color: var(--primary);
-    color: var(--background);
+    color: var(--text);
+    text-align: center;
 }
-
-.secondary {
+nav {
     background-color: var(--secondary);
+    font-weight: bold;
+    font-size: 120%;
+    padding: 0;
+    text-align: center;
 }
-
-.accent {
-    background-color: var(--accent);
-    color: var(--background);
-}
-
-.background {
+main {
     background-color: var(--background);
-    border: 1px solid var(--primary);
+    padding: 1px 30px 20px 20px;
+    display: block;
+    overflow: auto;
+}
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: sans-serif;
+    padding: 0.5em 0;
+}
+h2 {
+    color: var(--text);
+    font-family: sans-serif;
+    text-shadow: 1px 1px 1px #CCCCCC;
+}
+h3 {
+    color: var(--text);
+    font-family: sans-serif;
+}
+footer {
+    background-color: var(--accent);
 }

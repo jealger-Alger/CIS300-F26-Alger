@@ -6,11 +6,33 @@
         <link rel="stylesheet" href="project.css">
     </head>
     <body>
-        <h1>Project Test</h1>
-        <p>
-            This is a test of the project files. The CSS file has been updated to include new color variables for text, background, 
-            primary, secondary, and accent colors. The HTML structure remains simple with a heading and a paragraph to demonstrate the 
-            applied styles.
-        </p>
+        <main>
+            <h1>Project Color Palette</h1>
+            <p>
+                These samples use the color variables defined in <code>project.css</code>.
+            </p>
+
+            <section aria-labelledby="palette-heading">
+                <h2 id="palette-heading">Theme colors</h2>
+                <div class="palette">
+                    <article class="color-swatch primary">
+                        <h3>Primary</h3>
+                        <p>--primary</p>
+                    </article>
+                    <article class="color-swatch secondary">
+                        <h3>Secondary</h3>
+                        <p>--secondary</p>
+                    </article>
+                    <article class="color-swatch accent">
+                        <h3>Accent</h3>
+                        <p>--accent</p>
+                    </article>
+                    <article class="color-swatch background">
+                        <h3>Background</h3>
+                        <p>--background</p>
+                    </article>
+                </div>
+            </section>
+        </main>
     </body>
 </html>

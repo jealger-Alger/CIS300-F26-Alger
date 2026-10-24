@@ -13,7 +13,54 @@ body {
     margin: 0;
     padding: 0;
 }
+
+main {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 2rem;
+}
+
+h1 {
+    color: var(--primary);
+}
+
 p {
     line-height: 1.6;
     margin: 0 0 1em 0;
+}
+
+.palette {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+}
+
+.color-swatch {
+    border-radius: 8px;
+    min-height: 120px;
+    padding: 1rem;
+}
+
+.color-swatch h3,
+.color-swatch p {
+    margin: 0 0 0.5rem;
+}
+
+.primary {
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+.secondary {
+    background-color: var(--secondary);
+}
+
+.accent {
+    background-color: var(--accent);
+    color: var(--background);
+}
+
+.background {
+    background-color: var(--background);
+    border: 1px solid var(--primary);
 }

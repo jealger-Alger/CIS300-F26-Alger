@@ -13,6 +13,7 @@
 }
 #content {
     display: flex;
+    margin: 0 1em;
 }
 #wrapper {
     background-color: var(--background);
@@ -21,21 +22,29 @@
     margin: 0 auto;
 }
 header {
+    display: flex;
+    justify-content: center;
     text-align: center;
+    background-image: url("jmc-logo.png");
+    background-repeat: no-repeat;
+    font-size: 1.5em;
+    font-family: Tahoma, sans-serif;
+    padding-left: 100px;
+    min-height: 100px;
 }
 body {
     background-color: #000000;
     color: var(--text);
+    font-family: Tahoma, sans-serif;
 }
 nav {
     background-color: var(--primary);
-    
 }
 nav ul {
     list-style-type: none;
     text-align: center;
     font-size: 1.5em;
-    margin: 5px;
+    font-family: Georgia, serif;
 }
 nav li {
     display: inline;
@@ -50,12 +59,44 @@ nav a:visited { color: var(--secondary); }
 nav a:hover { color: var(--accent); }
 main {
     background-color: var(--backgroundMain);
-    flex: 7;
+    flex: 6;
     order: 1;
+    padding: 1em 1.2em 1em 2em;
 }
 aside {
     background-color: var(--backgroundAside);
-    flex: 3;
+    flex: 4;
     order: 2;
-    padding-left: 1em;
+    padding: 1em 1em 1em 1.2em;
 }
+h2 {
+    text-shadow: 1px 1px var(--primary);
+}
+h3 {
+    text-shadow: 1px 1px var(--accent);
+    text-align: center;
+    text-decoration: underline;
+}
+footer {
+    background-color: var(--secondary);
+    padding: 0.5em 1em 0.1em 1em;
+    color: var(--background);
+    font-family: Georgia, serif;
+    text-align: center;
+    font-weight: bold;
+}
+footer ul {
+    list-style-type: none;
+    text-align: center;
+    font-family: Georgia, serif;
+}
+footer li {
+    display: inline;
+}
+footer a {
+    text-decoration: none;
+    padding: 10px 10px;
+}
+footer a:link { color: var(--background); }
+footer a:visited { color: var(--accent); }
+footer a:hover { color: var(--primary); }

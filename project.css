@@ -25,7 +25,7 @@ header {
     display: flex;
     justify-content: center;
     text-align: center;
-    background-image: url("jmc-logo.png");
+    background-image: url("media/jmc-logo.png");
     background-repeat: no-repeat;
     font-size: 1.5em;
     font-family: Tahoma, sans-serif;

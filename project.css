@@ -21,6 +21,29 @@
     min-width: 800px;
     margin: 0 auto;
 }
+#herohome {
+    height: 350px;
+    background-image: url("media/Hero-Home.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#videosection {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+#videosection video {
+    width: 60%;
+    max-width: 300px;
+    height: auto;
+    flex-shrink: 0;
+}
+#videotext {
+    flex: 1;
+}
+#videotext h2 {
+    margin-top: 0;
+}
 header {
     display: flex;
     justify-content: center;
@@ -56,18 +79,21 @@ nav a {
 }
 nav a:link { color: var(--background); }
 nav a:visited { color: var(--secondary); }
-nav a:hover { color: var(--accent); }
+nav a:hover { color: var(--accent);}
 main {
     background-color: var(--backgroundMain);
     flex: 6;
     order: 1;
-    padding: 1em 1.2em 1em 2em;
+    padding: 1em 1.2em 1em 1em;
 }
 aside {
     background-color: var(--backgroundAside);
     flex: 4;
     order: 2;
     padding: 1em 1em 1em 1.2em;
+}
+video {
+    border: 5px solid var(--accent);
 }
 h2 {
     text-shadow: 1px 1px var(--primary);

@@ -9,40 +9,6 @@
     --primary: #98a3e6;
     --secondary: #902330;
     --accent: #d3984a;
-
-}
-#content {
-    display: flex;
-    margin: 0 1em;
-}
-#wrapper {
-    background-color: var(--background);
-    width: 80%;
-    min-width: 800px;
-    margin: 0 auto;
-}
-#herohome {
-    height: 350px;
-    background-image: url("media/Hero-Home.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-#videosection {
-    display: flex;
-    align-items: center;
-    gap: 1.5em;
-}
-#videosection video {
-    width: 60%;
-    max-width: 300px;
-    height: auto;
-    flex-shrink: 0;
-}
-#videotext {
-    flex: 1;
-}
-#videotext h2 {
-    margin-top: 0;
 }
 header {
     display: flex;
@@ -82,18 +48,34 @@ nav a:visited { color: var(--secondary); }
 nav a:hover { color: var(--accent);}
 main {
     background-color: var(--backgroundMain);
-    flex: 6;
+    flex: 7;
     order: 1;
     padding: 1em 1.2em 1em 1em;
 }
 aside {
     background-color: var(--backgroundAside);
-    flex: 4;
+    flex: 3;
     order: 2;
     padding: 1em 1em 1em 1.2em;
 }
+aside a {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
+}
+aside a:link { color: var(--accent); }
+aside a:visited { color: var(--text); }
+aside a:hover { color: var(--secondary); }
 video {
     border: 5px solid var(--accent);
+}
+figcaption {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
 }
 h2 {
     text-shadow: 1px 1px var(--primary);
@@ -126,3 +108,36 @@ footer a {
 footer a:link { color: var(--background); }
 footer a:visited { color: var(--accent); }
 footer a:hover { color: var(--primary); }
+#content {
+    display: flex;
+    margin: 0 1em;
+}
+#wrapper {
+    background-color: var(--background);
+    width: 80%;
+    min-width: 800px;
+    margin: 0 auto;
+}
+#herohome {
+    height: 400px;
+    background-image: url("media/Hero-Home.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#videosection {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+#videosection video {
+    width: 60%;
+    max-width: 300px;
+    height: auto;
+    flex-shrink: 0;
+}
+#videotext {
+    flex: 1;
+}
+#videotext h2 {
+    margin-top: 0;
+}

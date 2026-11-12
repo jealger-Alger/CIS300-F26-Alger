@@ -141,3 +141,105 @@ footer a:hover { color: var(--primary); }
 #videotext h2 {
     margin-top: 0;
 }
+@media (max-width: 1200px) {
+    #wrapper {
+        width: 100%;
+        min-width: 0;
+    }
+    header {
+        background-position: left center;
+        background-size: 64px auto;
+        padding-left: 72px;
+        font-size: clamp(1rem, 5vw, 1.5em);
+        align-items: center;
+    }
+
+    #content {
+        flex-direction: column;
+        margin: 0;
+    }
+    main, aside {
+        order: 0;
+        width: 100%;
+    }
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #videosection {
+        flex-direction: column;
+        align-items: center;
+    }
+    #videosection video {
+        width: 60%;
+        max-width: 500px;
+    }
+}
+@media (max-width: 800px) {
+    #wrapper {
+        width: 100%;
+        min-width: 0;
+    }
+    header {
+        background-position: left center;
+        background-size: 64px auto;
+        padding-left: 72px;
+        font-size: clamp(1rem, 5vw, 1.5em);
+        align-items: center;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    nav li {
+        display: block;
+        border-bottom: 1px solid var(--background);
+    }
+    nav a {
+        display: block;
+    }
+    #content {
+        flex-direction: column;
+        margin: 0;
+    }
+    main, aside {
+        order: 0;
+        width: 100%;
+    }
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #videosection {
+        flex-direction: column;
+        align-items: center;
+    }
+    #videosection video {
+        width: 100%;
+        max-width: none;
+    }
+    footer ul {
+        padding: 0;
+    }
+    footer li {
+        display: block;
+        border: 1px solid var(--background);
+        margin: 0 5em;
+    }
+}

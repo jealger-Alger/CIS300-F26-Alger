@@ -133,7 +133,7 @@ footer a:hover { color: var(--primary); }
 	box-shadow: 3px 3px 3px var(--background);
 	color: rgba(255,255,255,1);
 	transform: scale(3);
-    text-shadow: 1px 1px var(--accent);
+    text-shadow: 0.75px 0.75px var(--accent);
 }
 .gallery img {
     display: block;
@@ -213,7 +213,7 @@ footer a:hover { color: var(--primary); }
         box-shadow: 3px 3px 3px var(--background);
         color: rgba(255,255,255,1);
         transform: scale(2.5);
-        text-shadow: 1px 1px var(--accent);
+        text-shadow: 0.75px 0.75px var(--accent);
     }
     #videosection {
         flex-direction: column;
@@ -268,13 +268,24 @@ footer a:hover { color: var(--primary); }
         margin-left: auto;
         margin-right: auto;
     }
+    .gallery figure {
+        width: 150px;
+        position: relative;
+        z-index: 1;
+        opacity: 1;
+        background-color: var(--backgroundMain);
+        color: rgba(255,255,255,1);
+        margin: 1em;
+        font-size: 0.6em;
+        text-align: center;
+        text-shadow: 0.75px 0.75px var(--accent);
+    }
     .gallery figure:hover {
         opacity: 1;
         z-index: 999;
         box-shadow: 3px 3px 3px var(--background);
         color: rgba(255,255,255,1);
         transform: scale(2);
-        text-shadow: 1px 1px var(--accent);
     }
     #videosection {
         flex-direction: column;

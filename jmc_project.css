@@ -58,6 +58,11 @@ aside {
     order: 2;
     padding: 1em 1em 1em 1.2em;
 }
+aside figcaption {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
 aside a {
     display: block;
     text-align: center;
@@ -71,11 +76,6 @@ aside a:visited { color: var(--text); }
 aside a:hover { color: var(--secondary); }
 video {
     border: 5px solid var(--accent);
-}
-figcaption {
-    text-align: center;
-    font-style: italic;
-    font-weight: bold;
 }
 h2 {
     text-shadow: 1px 1px var(--primary);
@@ -108,6 +108,40 @@ footer a {
 footer a:link { color: var(--background); }
 footer a:visited { color: var(--accent); }
 footer a:hover { color: var(--primary); }
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 80%;
+	margin: auto;
+}
+.gallery figure {
+    width: 150px;
+    position: relative;
+	z-index: 1;
+	opacity: .75;
+	background-color: var(--backgroundMain);
+	color: rgba(255,255,255,0);
+	margin: 1em;
+	font-size: 0.5em;
+	text-align: center;
+	transition: all ease-out 1.5s;
+}
+.gallery figure:hover {
+    opacity: 1;
+	z-index: 999;
+	box-shadow: 3px 3px 3px var(--background);
+	color: rgba(255,255,255,1);
+	transform: scale(3);
+    text-shadow: 1px 1px var(--accent);
+}
+.gallery img {
+    display: block;
+}
+.gallery figcaption {
+    overflow-wrap: anywhere;
+    font-weight: bold;
+}
 #content {
     display: flex;
     margin: 0 1em;
@@ -173,6 +207,14 @@ footer a:hover { color: var(--primary); }
         margin-left: auto;
         margin-right: auto;
     }
+    .gallery figure:hover {
+        opacity: 1;
+        z-index: 999;
+        box-shadow: 3px 3px 3px var(--background);
+        color: rgba(255,255,255,1);
+        transform: scale(2.5);
+        text-shadow: 1px 1px var(--accent);
+    }
     #videosection {
         flex-direction: column;
         align-items: center;
@@ -225,6 +267,14 @@ footer a:hover { color: var(--primary); }
         height: auto;
         margin-left: auto;
         margin-right: auto;
+    }
+    .gallery figure:hover {
+        opacity: 1;
+        z-index: 999;
+        box-shadow: 3px 3px 3px var(--background);
+        color: rgba(255,255,255,1);
+        transform: scale(2);
+        text-shadow: 1px 1px var(--accent);
     }
     #videosection {
         flex-direction: column;

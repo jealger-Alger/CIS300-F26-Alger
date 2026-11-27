@@ -209,6 +209,33 @@ footer a:hover { color: var(--primary); }
     overflow-wrap: anywhere;
     font-weight: bold;
 }
+.highlights-grid {
+    display: grid;
+    gap: 2em;
+    margin: 0 2em;
+}
+.highlight-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2em;
+    align-items: center;
+}
+.highlight-row img {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    margin: 0;
+}
+.highlight-row > img:last-child {
+    justify-self: end;
+}
+.highlight-text {
+    text-align: left;
+}
+.highlight-text h2 {
+    margin-top: 0;
+}
 #content {
     display: flex;
     margin: 0 1em;
@@ -319,6 +346,11 @@ footer a:hover { color: var(--primary); }
     #videosection video {
         width: 60%;
         max-width: 500px;
+    }
+    footer li {
+        background-color: #69151f;
+        border: 1.5px solid var(--background);
+        padding: 0.5em 0;
     }
 }
 @media (max-width: 800px) {
@@ -435,8 +467,10 @@ footer a:hover { color: var(--primary); }
         padding: 0;
     }
     footer li {
+        background-color: #69151f;
         display: block;
-        border: 1px solid var(--background);
-        margin: 0 5em;
+        border: 3px solid var(--background);
+        margin: 0.5em 7em;
+        font-size: 1.2em;
     }
 }
